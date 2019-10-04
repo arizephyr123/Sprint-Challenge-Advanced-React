@@ -2,3 +2,8 @@
   background-color: blue;
   color: white;
   }
+
+  .dark-mode{
+    background-color: darkslategray;
+  color: aliceblue;
+  }

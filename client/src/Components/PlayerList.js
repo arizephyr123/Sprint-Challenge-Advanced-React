@@ -27,7 +27,6 @@ class PlayerList extends React.Component{
     render(){
         return(
           <>
-          <h2>Women's World Cup players ranked in search interest <br></br>June-July 2019</h2>
             <Table>
             <thead className="table-header">
               <tr>
