@@ -14,10 +14,10 @@ class PlayerList extends React.Component{
     componentDidMount(){
         axios.get("http://localhost:5000/api/players")
         .then(res => {
-            console.log(res);
-            // this.setState({
-            //     rankData: res
-            // });
+            //console.log(res.data);
+            this.setState({
+                rankData: res.data
+            });
         })
         .catch(err => {
             console.log(err);
@@ -34,12 +34,12 @@ class PlayerList extends React.Component{
                 <th>Rank</th>
                 <th>Name</th>
                 <th>Country</th>
-                <th>Percentile</th>
+                <th>Searches</th>
               </tr>
             </thead>
             <tbody>
              {this.state.rankData.map(each => {
-            console.log(each);
+            //console.log(each);
             return (
               <ListRow
                 key={each.id}
